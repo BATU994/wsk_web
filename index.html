@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="nav_mobile">
+      <button
+        class="burger-close"
+        style="
+          background-color: transparent;
+          border: solid 0px;
+          margin-left: 90%;
+        "
+        onclick="navHide()"
+      >
+        <img src="icons/heroicons-outline/bars-3.svg" alt="" />
+      </button>
+      <div class="logo">
+        <h1>ApI</h1>
+      </div>
+
+      <nav>
+        <ul style="color: black">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Product</a></li>
+          <li><a href="prices.html">Pricing</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+    <nav>
+      <h1>ApI</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Product</a></li>
+        <li><a href="prices.html">Pricing</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+      <button
+        class="burger"
+        style="background-color: transparent; border: solid 0px"
+        onclick="navBar()"
+      >
+        <img src="icons/heroicons-outline/bars-3.svg" alt="" />
+      </button>
+    </nav>
+    <div class="hero_section">
+      <div class="hero_text">
+        <h1>
+          Build your product with our <span class="ai">AI</span> controlled API
+        </h1>
+        <p></p>
+        <button class="hero_button">Get prices</button>
+      </div>
+      <img src="illustrations/undraw_chat_bot_re_e2gj.svg" alt="" />
+    </div>
+    <div class="our_inov">
+      <img src="illustrations/undraw_completed_03xt.svg" alt="" />
+      <div class="our_text">
+        <h1>
+          Our innovative AI will <br />
+          manage everything for you!
+        </h1>
+      </div>
+    </div>
+    <div class="team">
+      <div class="team_text">
+        <h1>
+          Do you want to get <br />
+          acquinted with our team?
+        </h1>
+        <button>Let's get known</button>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_text">
+        <h1>ApI</h1>
+        <p>© 2020 ApI. All rights reserved</p>
+      </div>
+      <div class="footer_links">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Team</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

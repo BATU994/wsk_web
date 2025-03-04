@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team & Values</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #e0d4f7;
+        margin: 0;
+      }
+      .container {
+        margin: 20px 8.333vw;
+        text-align: center;
+      }
+      .team-member {
+        background-color: blueviolet;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 10px 0;
+        width: 300px;
+        height: 300px;
+        img {
+          width: 60px;
+          height: 60px;
+          object-fit: cover;
+          border-radius: 100%;
+        }
+      }
+      .team-member h2 {
+        color: #f6f6f6;
+      }
+      .values {
+        background-color: blueviolet;
+        padding: 20px;
+        border: solid 2px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .values h2 {
+        color: #ffffff;
+      }
+      .values ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        list-style: none;
+        justify-items: center;
+        padding: 0;
+      }
+      .values li {
+        background-color: #5b347c;
+        padding: 10px;
+        margin: 5px 0;
+        text-align: left;
+        width: 90%;
+        height: 120px;
+        border-radius: 5px;
+      }
+      .values li img {
+        width: 40px;
+      }
+      .members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav_mobile">
+      <button
+        class="burger-close"
+        style="
+          background-color: transparent;
+          border: solid 0px;
+          margin-left: 90%;
+        "
+        onclick="navHide()"
+      >
+        <img src="icons/heroicons-outline/bars-3.svg" alt="" />
+      </button>
+      <div class="logo">
+        <h1>ApI</h1>
+      </div>
+
+      <nav>
+        <ul style="color: black">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Product</a></li>
+          <li><a href="prices.html">Pricing</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+    <nav>
+      <h1>ApI</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Product</a></li>
+        <li><a href="prices.html">Pricing</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+      <button
+        class="burger"
+        style="background-color: transparent; border: solid 0px"
+        onclick="navBar()"
+      >
+        <img src="icons/heroicons-outline/bars-3.svg" alt="" />
+      </button>
+    </nav>
+    <div class="container">
+      <div class="meet">
+        <h1 style="color: blueviolet">Meet Our Team</h1>
+        <div class="members">
+          <div class="team-member">
+            <img src="images/albert-dera-ILip77SbmOE-unsplash.jpg" alt="" />
+            <h2>John Smith</h2>
+            <p><strong>Founder & CEO</strong></p>
+            <p>
+              John is the driving force behind the company. With a deep
+              understanding of AI's transformative potential, he founded the
+              company to create solutions that make a positive impact on
+              society.
+            </p>
+          </div>
+          <div class="team-member">
+            <img src="images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="" />
+            <h2>Emily Chen</h2>
+            <p><strong>Chief Technology Officer (CTO)</strong></p>
+            <p>
+              Emily is our tech wizard, leading the charge in AI research and
+              development.
+            </p>
+          </div>
+          <div class="team-member">
+            <img src="images/connor-wilkins-2crxTr4jCkc-unsplash.jpg" alt="" />
+            <h2>Sarah Rodriguez</h2>
+            <p><strong>Chief Marketing Officer (CMO)</strong></p>
+            <p>Sarah is the creative powerhouse behind our brand.</p>
+          </div>
+          <div class="team-member">
+            <img src="images/austin-wade-X6Uj51n5CE8-unsplash.jpg" alt="" />
+            <h2>David Walker</h2>
+            <p><strong>Head of Product</strong></p>
+            <p>
+              David's ability to transform AI concepts into user-friendly
+              products is unparalleled.
+            </p>
+          </div>
+          <div class="team-member">
+            <img
+              src="images/stephanie-liverani-Zz5LQe-VSMY-unsplash.jpg"
+              alt=""
+            />
+            <h2>Lisa Martin</h2>
+            <p><strong>AI Research Scientist</strong></p>
+            <p>Lisa's boundless curiosity drives our AI innovation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="values">
+        <h2>Our Core Values</h2>
+        <ul>
+          <li>
+            <img src="icons/feather/cpu.svg" alt="" />
+            <h1>Innovation</h1>
+            - Relentless pursuit of creative solutions.
+          </li>
+          <li>
+            <img src="icons/feather/code.svg" alt="" />
+            <h1>Ethical AI</h1>
+            - Committed to fairness and privacy.
+          </li>
+          <li>
+            <img src="icons/feather/table.svg" alt="" />
+            <h1>Collaboration</h1>
+            - Great ideas come from diverse minds.
+          </li>
+          <li>
+            <img src="icons/feather/user.svg" alt="" />
+            <h1>User-Centric Design</h1>
+            - Enhancing lives through intuitive AI.
+          </li>
+          <li>
+            <img src="icons/feather/plus-circle.svg" alt="" />
+            <h1>Positive Impact</h1>
+            - Making the world better with AI.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

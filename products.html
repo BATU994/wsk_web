@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      ul {
+        list-style: none;
+      }
+      .everything {
+        margin: 30px 8.3333vw;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .segment {
+        gap: 20px;
+        padding: 20px;
+        border: solid 2px blueviolet;
+        color: blueviolet;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav_mobile">
+      <button
+        class="burger-close"
+        style="
+          background-color: transparent;
+          border: solid 0px;
+          margin-left: 90%;
+        "
+        onclick="navHide()"
+      >
+        <img src="icons/heroicons-outline/bars-3.svg" alt="" />
+      </button>
+      <div class="logo">
+        <h1>ApI</h1>
+      </div>
+
+      <nav>
+        <ul style="color: black">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Product</a></li>
+          <li><a href="prices.html">Pricing</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+    <nav>
+      <h1>ApI</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Product</a></li>
+        <li><a href="prices.html">Pricing</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+      <button
+        class="burger"
+        style="background-color: transparent; border: solid 0px"
+        onclick="navBar()"
+      >
+        <img src="icons/heroicons-outline/bars-3.svg" alt="" />
+      </button>
+    </nav>
+    <div class="everything">
+      <div class="chatbot segment" style="display: flex">
+        <img
+          src="images/steve-johnson-ZPOoDQc8yMw-unsplash.jpg"
+          style="
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+          "
+          alt=""
+        />
+        <div class="seg_text">
+          <h1>ChatterBlast - Chat API</h1>
+          <p>Unleash Conversational Intelligence</p>
+          <h2>Description</h2>
+          <p>
+            Elevate your customer interactions with our Chat Bot Service.
+            Powered by cutting-edge AI technology, our chatbots are designed to
+            engage, assist, and delight. Whether you're a small business or a
+            global enterprise, our per-second pricing ensures you pay only for
+            what you use. Create seamless, personalized conversations with your
+            audience, and watch customer satisfaction soar. Get started today
+            and let your chatbot become the voice of your brand.
+          </p>
+          <h2>Features:</h2>
+          <ul>
+            <li>- Conversational AI</li>
+            <li>- Customizable</li>
+            <li>- Natural Language Processing</li>
+            <li>- Secure Data Processing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dreamweaver segment" style="display: flex">
+        <img
+          src="images/steve-johnson-YJGq5H9ofy0-unsplash.jpg"
+          style="
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+          "
+          alt=""
+        />
+        <div class="seg_text">
+          <h1>DreamWeaver - Image Generation API</h1>
+          <p>Transform Ideas into Visuals, Instantly</p>
+          <h2>Description</h2>
+          <p>
+            Imagine turning your concepts into stunning visuals with a simple
+            click. Our Image Generation Service makes it possible. Harness the
+            power of AI to generate images for marketing, design, and more. Our
+            per-second pricing means you pay based on your usage, making it
+            accessible to businesses of all sizes. Bring your creativity to
+            life, and explore the endless possibilities of AI-generated imagery.
+          </p>
+          <h2>Features:</h2>
+          <ul>
+            <li>- Fully Customizable</li>
+            <li>- Variety of Styles</li>
+            <li>- High Resolution</li>
+            <li>- Batch Processing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mindreader segment" style="display: flex">
+        <img
+          src="images/playground-gPASJNVOuM0-unsplash.jpg"
+          style="
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+          "
+          alt=""
+        />
+        <div class="seg_text">
+          <h1>MindReader - Image Recognition API</h1>
+          <p>See the World Through AI Eyes</p>
+          <h2>Description</h2>
+          <p>
+            Unlock the potential of visual data with our Image Recognition
+            Service. Our AI-powered models can identify objects, scenes, and
+            more from images and videos, providing invaluable insights for your
+            business. With per-second pricing, you only pay for the seconds you
+            use, making it affordable for startups and enterprises alike.
+            Enhance your decision-making, streamline workflows, and
+            revolutionize your understanding of visual content. Try it now and
+            gain a new perspective.
+          </p>
+          <h2>Features:</h2>
+          <ul>
+            <li>- Object Recognition</li>
+            <li>- Scene Recognition</li>
+            <li>- Text Detection</li>
+            <li>- Face Recognition</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
